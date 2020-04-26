@@ -25,6 +25,8 @@ THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import sys
 import time
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 from ._colorized import *
 from ._extract import CloudGuru
