@@ -294,7 +294,7 @@ class CloudGuru(ProgressBar):
                         cid = cid.rsplit("/", 1)[-1]
                         cid = re.search(r"[a-zA-Z0-9]{8}\-[a-zA-Z0-9]{4}\-[a-zA-Z0-9]{4}\-[a-zA-Z0-9]{4}\-[a-zA-Z0-9]{12}", cid)
                         if cid:
-                            subtitle_url = f"https://acloudguru-subtitles-production.s3.amazonaws.com/{cid.group()}.vtt"
+                            subtitle_url = "https://acloudguru-subtitles-production.s3.amazonaws.com/{cid.group()}.vtt"
                             break
                 if lecture not in _temp:
                     _temp.append({
